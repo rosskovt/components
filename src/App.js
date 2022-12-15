@@ -1,36 +1,16 @@
-import { GoBell } from 'react-icons/go';
-import Button from "./Button";
-
-const handleClick = () => {
-    console.log('Click');
-}
+import Dropdown from "./components/Dropdown";
 
 function App() {
+    const options = [
+        { label: 'Red', value: 'red' },
+        { label: 'Green', value: 'green' },
+        { label: 'Blue', value: 'blue' },
+    ];
+
     return (
-        <div>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-            <div>
-                <Button onClick={handleClick} primary>
-                    <GoBell />
-                    Click me
-                </Button>
-            </div>
-            <div>
-                <Button secondary rounded>Buy now</Button>
-            </div>
-            <div>
-                <Button danger outline>Transfer</Button>
-            </div>
-            <div>
-                <Button success rounded>Disable ads</Button>
-            </div>
-            <div>
-                <Button primary rounded>Something!</Button>
-            </div>
-        </div>
+        <div><Dropdown options={options} /></div>
     )
+
 };
 
 export default App;
