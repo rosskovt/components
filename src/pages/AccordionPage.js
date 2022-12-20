@@ -1,6 +1,6 @@
-import Accordion from './components/Accordion';
+import Accordion from '../components/Accordion';
 
-function Accordionpage() {
+function AccordionPage() {
     const items = [
         {
             id: "sdgfr",
@@ -23,4 +23,4 @@ function Accordionpage() {
     )
 };
 
-export default Accordionpage;
+export default AccordionPage;
