@@ -112,8 +112,8 @@ function CounterPage({ initialCount }) {
                 Count is {state.count}
             </h1>
             <div className="flex flex-row">
-                <Button onClick={() => increment(state.count)}>Increment</Button>
-                <Button onClick={() => decrement(state.count)}>Decrement</Button>
+                <Button onClick={increment}>Increment</Button>
+                <Button onClick={decrement}>Decrement</Button>
             </div>
             <form onSubmit={handleSubmit}>
                 <label>Add a lot</label>
